@@ -1,0 +1,16 @@
+{
+    "name": "generic-exception",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha ./test/*.js --reporter mochawesome --reporter-options reportDir=./test-results,reportFilename=unit-report.html,code=false,autoOpen=false"
+    },
+    "dependencies": {
+        "app-root-path": "^2.2.1",
+        "find": "^0.3.0",
+        "node-i18n-util": "^1.0.5"
+    },
+    "author": "Amar Panigrahy",
+    "license": "ISC"
+}
