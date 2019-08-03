@@ -20,7 +20,7 @@
 
 ### Installing the package
   ```sh
-    npm i https://github.com/travelex/generic-exception.git 
+    npm i generic-exception
 ```
 
 ### Usage
