@@ -18,10 +18,6 @@
 -	wrappedException : Wrapped exception has the actual error 
 -	stackTrace : error stack
 
-### Installing the package
-  ```sh
-    npm i https://github.com/travelex/generic-exception.git 
-```
 
 ### Usage
 
@@ -31,8 +27,8 @@
 - Create messages.properties file in the project 
 
 ```js
-    errorSavingCustomer = {"code": "101", "description": "Error while saving customer {0}", "httpStatusCode":"500"}
-    missingCustomerEmail = {"code": "102", "description": "Missing customer email", "httpStatusCode":"400"}
+    errorSaving = {"code": "101", "description": "Error while saving customer {0}", "httpStatusCode":"500"}
+    missingEmail = {"code": "102", "description": "Missing customer email", "httpStatusCode":"400"}
 ```
 - Example
 ```sh
@@ -50,7 +46,7 @@
                     // 
                 });
         } catch (e) {
-            throw new GenericException.Builder('errorSavingCustomer')
+            throw new GenericException.Builder('errorSaving')
                 .withSubstitutionArgs('Custom value 1', 'custom value 2', '...etc')
                 .withWrappedException(e)
                 .withMessage('Specific error meesage')
